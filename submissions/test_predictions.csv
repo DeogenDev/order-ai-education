@@ -1,0 +1,504 @@
+id,text,label,probability
+1001,Новый сотрудник — прочитайте закреп,not_order,0.1356
+1002,SYN_NOT_ORDER_73: generic chat message,not_order,0.1817
+1005,"Это тест, не учитывать",not_order,0.115
+1006,template noise message 96 without order structure,not_order,0.1256
+1007,заказ 3349 — см. новое сообщение ниже,not_order,0.2567
+1008,123,not_order,0.1499
+1009,Обсуждаем завтра на планёрке,not_order,0.1489
+1010,New slang in chat,not_order,0.1363
+1011,Junior pet projects много,not_order,0.1736
+1013,сколько сейчас Samsung S24?,not_order,0.1859
+1017,"Не согласен, margin маленький",not_order,0.1229
+1020,"не заказ!!!
+просто спрашиваю",not_order,0.1231
+1023,Topic forum thread id,not_order,0.1508
+1024,MiniLM multilingual для фильтра,not_order,0.1639
+1025,номер заказа 2205 в таблице не вижу,not_order,0.1454
+1026,Кто писал CharComparator — работает но print в prod,not_order,0.2174
+1027,ONNX export?,not_order,0.1431
+1029,Fallback regex if prob low,not_order,0.1672
+1030,Telegram retry after 30 sec,not_order,0.1547
+1031,Pg listener notify,not_order,0.136
+1033,auto generated not order sample #63,not_order,0.1196
+1034,заказ 3348 superseded by 3349,not_order,0.3953
+1040,Recall order выше — бизнес просит,not_order,0.1471
+1041,заказ 3346 — редактируется,not_order,0.1649
+1042,"менеджер, глянь iPhone 14 на складе",not_order,0.186
+1046,Замените на pro max,not_order,0.1354
+1048,template noise message 68 without order structure,not_order,0.1247
+1051,Holdout test untouched,not_order,0.1232
+1055,по заказу 2201 уточните адрес доставки в лс,not_order,0.2556
+1058,F1 важнее accuracy,not_order,0.1647
+1061,заказ 3354 — вопрос по старому заказу,not_order,0.2349
+1062,USA model — lte в рф норм?,not_order,0.1642
+1063,а,not_order,0.1327
+1064,Telethon session слетела,not_order,0.1262
+1066,Чёрный есть?,not_order,0.1433
+1072,"номер заказа 9999 ошибочный, вопрос про iPhone 14",not_order,0.3005
+1074,актуальная цена на Samsung S24?,not_order,0.265
+1075,актуальная цена на iPhone 14?,not_order,0.1828
+1077,"Корпоративная закупка, куда писать?",not_order,0.1408
+1080,"Нужен iPhone 15 Pro - 2 штуки, как оформить?",not_order,0.2807
+1085,Class weight balanced,not_order,0.1636
+1089,order vs not_order баланс 50/50,not_order,0.1661
+1090,Sticker ignore,not_order,0.1322
+1093,заказ 3325 клиент думает,not_order,0.1705
+1094,auto generated not order sample #112,not_order,0.1248
+1095,"номер заказа 9999 ошибочный, вопрос про Samsung S24",not_order,0.4069
+1099,Portfolio telegram ecosystem,not_order,0.2051
+1100,Reply thread context,not_order,0.1238
+1101,Alembic migrate head,not_order,0.1582
+1102,Колонка B съехала после переноса,not_order,0.1458
+1103,"заказ 3306 — уточните статус, не новый",not_order,0.1663
+1104,"Не срочно, на следующей неделе",not_order,0.1328
+1105,🔥,not_order,0.1371
+1106,Рст есть?,not_order,0.1331
+1109,есть MacBook Air M2?,not_order,0.2337
+1110,"Нужен счёт на ООО, не через чат оформляем",not_order,0.134
+1113,logs_topic_id проверьте,not_order,0.1332
+1117,Когда ждать партию AirPods Pro 2?,not_order,0.3916
+1118,template noise message 35 without order structure,not_order,0.1209
+1120,по iPhone 14 уточните в лс,not_order,0.1453
+1123,auto generated not order sample #115,not_order,0.1195
+1125,Multiline csv pandas read,not_order,0.1645
+1126,Пример сообщения для заказа кто может кинуть?,not_order,0.1338
+1128,Бот не отвечает с утра,not_order,0.1179
+1129,Retrain monthly,not_order,0.1424
+1131,заказ 3360 — manual review,not_order,0.2086
+1132,Собрание перенесли на 11,not_order,0.1381
+1135,"это не заявка, интересует только Samsung S24",not_order,0.2501
+1137,заказ 3335 — обсуждаем завтра,not_order,0.1819
+1141,SYN_NOT_ORDER_50: generic chat message,not_order,0.1815
+1142,Оплата прошла?,not_order,0.1329
+1143,Сравнивал с ozon — у нас дешевле выходит?,not_order,0.1923
+1152,В prod лучше webhook чем polling,not_order,0.1805
+1154,"заказ 3310 — это старый, новый будет позже",not_order,0.2403
+1156,хахах,not_order,0.1358
+1157,ждём Samsung S24 на этой неделе?,not_order,0.1788
+1158,Закупка отложена,not_order,0.1186
+1160,requirements.txt pin versions,not_order,0.137
+1161,LLM api запрещён как классификатор,not_order,0.1288
+1164,template noise message 28 without order structure,not_order,0.1203
+1165,"менеджер, глянь iPhone 15 Pro на складе",not_order,0.2643
+1166,заказ 3358 — кто удалил сообщение?,not_order,0.1473
+1167,Max length 512 tokens,not_order,0.1968
+1171,"Уже оплатил вчера, когда в таблицу попадёт?",not_order,0.1392
+1173,"заказ 3308 ошибочный, удалите",not_order,0.1246
+1174,Клиент ушёл к конкурентам из-за сроков,not_order,0.1447
+1175,Async sqlalchemy 2,not_order,0.2831
+1176,Датасет для классификатора соберём,not_order,0.119
+1177,Оффтоп перенесите в general,not_order,0.1311
+1183,Ясно,not_order,0.1366
+1185,очистить чат подтвердите,not_order,0.1134
+1186,template noise message 45 without order structure,not_order,0.1201
+1188,Message deleted reaction fail,not_order,0.1391
+1189,оформил заказ через сайт вчера,not_order,0.1415
+1190,Курс доллара сегодня какой считаете?,not_order,0.1346
+1195,auto generated not order sample #86,not_order,0.1227
+1196,"Завтра выходной, группа только для срочного",not_order,0.1526
+1198,заказ отменён — Samsung S24 уже не нужен,not_order,0.2018
+1003,"заказ 9117
+Auto Buyer
+FakeBook Pro 50000 - 3",order,0.9081
+1004,"заказ 2233
+Пётр
+DJI Mini 4 Pro fly more - 1",order,0.8755
+1012,"Заказ 3097
+Юля
+Dyson V15 - 1",order,0.8616
+1014,"заказ 3124
+Ира
+Xiaomi 14 - 1
+iPhone 15 Pro 256 - 2
+Canon R50 - 2
+доставка СДЭК",order,0.9238
+1015,"заказ 9087
+Auto Buyer
+TestPhone X1 10000 - 3",order,0.9035
+1016,"заказ 3279
+Вика
+Dyson V15 - 1
+Galaxy Buds3 - 5
+наличные",order,0.9196
+1018,"заказ 2192
+Екатерина В.
+iPad Pro 11 M4 - 1
+Apple Pencil - 1",order,0.9179
+1019,"заказ 9112
+Gen Name
+FakeBook Pro 50000 - 1",order,0.9083
+1021,"заказ 3135
+Света
+Xiaomi 14 - 4
+наличные",order,0.8107
+1022,"заказ 3007
+Вика
+Samsung A55 - 1
+Apple Watch S9 - 2
+iPhone 14 128 - 3
+оплата картой",order,0.9246
+1028,"заказ 9079
+Тест Клиент
+SamplePad 2 30000 - 3",order,0.9034
+1032,"заказ 3285
+Ира
+Apple Watch S9 - 2
+оплата картой",order,0.907
+1035,"заказ 3194
+Гена
+Canon R50 - 1
+наличные",order,0.8078
+1036,"заказ 9014
+Synthetic User
+FakeBook Pro 50000 - 2",order,0.9089
+1037,"заказ 3360
+Борис
+Galaxy Buds3 - 2
+iPhone 15 Pro 256 - 1
+Samsung A55 - 1",order,0.9217
+1038,"заказ 9111
+Auto Buyer
+FakeBook Pro 50000 - 2",order,0.9105
+1039,"заказ 3292
+Анна
+Samsung S24 Ultra - 2
+MacBook Air M2 - 3
+Canon R50 - 2",order,0.9222
+1043,"заказ 3136
+Ольга
+AirPods Pro 2 - 3
+iPad Air 11 - 3
+наличные",order,0.9168
+1044,"заказ 2215
+Никита
+Steam Deck OLED 1TB - 1",order,0.8952
+1045,"Заказ 3243
+Гена
+iPad Air 11 - 3",order,0.869
+1047,"заказ 3006
+Алексей
+Dyson V15 - 4
+PlayStation 5 - 1
+iPhone 14 128 - 5
+оплата картой",order,0.9197
+1049,"заказ 2256
+Иван Ж.
+🇷🇺 iPhone 15 Pro Max - 1
+🇺🇸 iPhone 15 Pro Max - 1",order,0.9043
+1050,"заказ №3204
+Наталья
+Dyson V15 - 3
+Samsung A55 - 5
+iPhone 14 128 - 3",order,0.9246
+1052,"Заказ 3117
+Света
+iPhone 15 Pro 256 - 5",order,0.9002
+1053,"заказ №3089
+Света
+Dyson V15 - 4
+iPhone 15 Pro 256 - 3",order,0.9239
+1054,"СРОЧНО заказ 3031
+Дмитрий
+Samsung A55 - 4
+MacBook Air M2 - 2
+Redmi Note 13 - 5",order,0.9233
+1056,"заказ 3088
+Борис
+Apple Watch S9 - 5
+Canon R50 - 2
+PlayStation 5 - 4
+доставка СДЭК",order,0.9256
+1057,"заказ 2217
+Борис
+ThinkPad X1 Carbon gen11 - 1",order,0.9015
+1059,"заказ 9048
+Тест Клиент
+TestPhone X1 10000 - 3",order,0.8952
+1060,"СРОЧНО заказ 3064
+Алина
+GoPro Hero 12 - 1
+PlayStation 5 - 1
+AirPods Pro 2 - 3",order,0.9174
+1065,"СРОЧНО заказ 3315
+Андрей
+Xiaomi 14 - 3
+Apple Watch S9 - 5",order,0.9165
+1067,"заказ 2299
+Петр S
+iPad 10 64 WiFi - 2",order,0.9104
+1068,"заказ 2211
+Глеб
+Samsung Z Fold6 - 1",order,0.9009
+1069,"заказ 3220
+Алина
+Redmi Note 13 - 1
+iPad Air 11 - 4
+MacBook Air M2 - 1
+доставка СДЭК",order,0.9213
+1070,"Заказ 3191
+Борис
+iPhone 14 128 - 4
+Apple Watch S9 - 4
+Canon R50 - 3",order,0.9207
+1071,"Заказ 3055
+Кирилл
+Apple Watch S9 - 4",order,0.8972
+1073,"Заказ 3075
+Мария К.
+Samsung A55 - 4",order,0.8992
+1076,"заказ №3050
+Вика
+Samsung S24 Ultra - 5
+Dyson V15 - 3",order,0.9215
+1078,"заказ 3320
+Роман
+Samsung S24 Ultra - 2
+iPad Air 11 - 4
+наличные",order,0.9218
+1079,"заказ №3182
+Вика
+Redmi Note 13 - 3",order,0.8874
+1081,"заказ №3098
+Zaur
+MacBook Air M2 - 2
+Galaxy Buds3 - 5
+AirPods Pro 2 - 5",order,0.9236
+1082,"заказ 9067
+Synthetic User
+SamplePad 2 30000 - 3",order,0.9044
+1083,"заказ 3269
+Анна
+iPad Air 11 - 4
+Canon R50 - 4
+оплата картой",order,0.9068
+1084,"заказ 3004
+Наталья
+Galaxy Buds3 - 3
+оплата картой",order,0.893
+1086,"заказ 9007
+Тест Клиент
+FakeBook Pro 50000 - 2",order,0.9082
+1087,"заказ 3350
+Анна
+Samsung A55 - 4
+Apple Watch S9 - 1
+Xiaomi 14 - 5
+наличные",order,0.9182
+1088,"заказ 3057
+Вика
+PlayStation 5 - 2
+Samsung S24 Ultra - 1
+iPad Air 11 - 3",order,0.9248
+1091,"заказ 9119
+Gen Name
+FakeBook Pro 50000 - 3",order,0.906
+1092,"заказ 2287
+Павел (менеджер передал)
+iPhone 13 128 midnight - 3",order,0.8551
+1096,"заказ 3078
+Виктор
+Galaxy Buds3 - 5
+доставка СДЭК",order,0.9108
+1097,"Заказ 3301
+Вика
+PlayStation 5 - 2
+iPhone 14 128 - 4
+AirPods Pro 2 - 1",order,0.9193
+1098,"Заказ 3065
+Кирилл
+iPhone 14 128 - 5",order,0.8742
+1107,"заказ 3030
+Виктор
+Canon R50 - 1",order,0.8488
+1108,"заказ 3225
+Наталья
+Samsung A55 - 5
+Samsung S24 Ultra - 2
+самовывоз завтра",order,0.917
+1111,"заказ 3238
+Ира
+iPad Air 11 - 3
+Redmi Note 13 - 2
+Galaxy Buds3 - 5
+самовывоз завтра",order,0.9213
+1112,"заказ 9053
+Synthetic User
+TestPhone X1 10000 - 3",order,0.893
+1114,"заказ 9085
+Auto Buyer
+FakeBook Pro 50000 - 1",order,0.906
+1115,"заказ 9060
+Тест Клиент
+TestPhone X1 10000 - 2",order,0.9008
+1116,"Заказ 3355
+Борис
+Canon R50 - 4
+iPad Air 11 - 4",order,0.9107
+1119,"заказ 3326
+Артём
+Xiaomi 14 - 5
+оплата картой",order,0.8103
+1121,"заказ 3199
+Роман
+AirPods Pro 2 - 3
+Redmi Note 13 - 3
+самовывоз завтра",order,0.9147
+1122,"заказ 2292
+Захар
+Legion Pro 7i - 1",order,0.8804
+1124,"заказ №3335
+Алексей
+iPad Air 11 - 2",order,0.9028
+1127,"заказ №3003
+Гена
+MacBook Air M2 - 2
+Galaxy Buds3 - 4
+iPhone 15 Pro 256 - 3",order,0.9236
+1130,"заказ 2257
+Камilla
+Oculus Quest 2 256 - 2",order,0.8737
+1133,"заказ 9062
+Auto Buyer
+TestPhone X1 10000 - 3",order,0.9065
+1134,"заказ 3131
+Артём
+iPhone 14 128 - 3
+Dyson V15 - 4
+оплата картой",order,0.9113
+1136,"заказ 3318
+Виктор
+iPhone 15 Pro 256 - 2
+Xiaomi 14 - 5
+Dyson V15 - 5
+оплата картой",order,0.9209
+1138,"заказ 9021
+Gen Name
+FakeBook Pro 50000 - 2",order,0.9094
+1139,"заказ 9043
+Auto Buyer
+FakeBook Pro 50000 - 1",order,0.8971
+1140,"заказ 3247
+Андрей
+Galaxy Buds3 - 5
+доставка СДЭК",order,0.9106
+1144,"СРОЧНО заказ 3261
+Дмитрий
+PlayStation 5 - 5
+Canon R50 - 5
+Galaxy Buds3 - 1",order,0.9177
+1145, ,order,0.6179
+1146,"заказ №3074
+Ира
+Galaxy Buds3 - 2",order,0.9145
+1147,"заказ №3024
+Елена С.
+Canon R50 - 5",order,0.8774
+1148,"заказ 3206
+Света
+Samsung S24 Ultra - 3",order,0.9033
+1149,"заказ 3353
+Катя
+iPhone 14 128 - 3
+iPhone 15 Pro 256 - 1
+iPad Air 11 - 5",order,0.9187
+1150,"заказ №3106
+Zaur
+Xiaomi 14 - 3
+Redmi Note 13 - 1
+iPad Air 11 - 4",order,0.9207
+1151,"заказ 9018
+Synthetic User
+FakeBook Pro 50000 - 1",order,0.9024
+1153,"СРОЧНО заказ 3213
+Лuda
+MacBook Air M2 - 5",order,0.909
+1155,"заказ 3077
+Aisha
+Samsung A55 - 1
+Samsung S24 Ultra - 1
+доставка СДЭК",order,0.9184
+1159,"заказ 3063
+Михаил
+AirPods Pro 2 - 1
+MacBook Air M2 - 3",order,0.9142
+1162,"заказ 3172
+Дмитрий
+Galaxy Buds3 - 2
+наличные",order,0.8966
+1163,"заказ 3207
+Лена
+iPhone 15 Pro 256 - 2
+Samsung S24 Ultra - 5
+оплата картой",order,0.9241
+1168,"заказ 2252
+Георгий
+PS5 Digital + 2й геймпад - 1",order,0.8805
+1169,"заказ 3028
+Анна
+Samsung A55 - 1
+наличные",order,0.8779
+1170,"СРОЧНО заказ 3323
+Макс
+Galaxy Buds3 - 3
+GoPro Hero 12 - 5
+Apple Watch S9 - 4",order,0.9218
+1172,"заказ 3070
+Артём
+Samsung S24 Ultra - 4
+Samsung A55 - 2
+iPad Air 11 - 5
+доставка СДЭК",order,0.9237
+1178,"СРОЧНО заказ 3155
+Aisha
+iPhone 15 Pro 256 - 2
+Xiaomi 14 - 3
+iPhone 14 128 - 2",order,0.9201
+1179,"заказ №3329
+Света
+Apple Watch S9 - 1
+MacBook Air M2 - 5
+Samsung S24 Ultra - 5",order,0.9229
+1180,"заказ 3284
+Ольга
+GoPro Hero 12 - 3
+AirPods Pro 2 - 1
+Redmi Note 13 - 5
+наличные",order,0.9201
+1181,"заказ 9065
+Gen Name
+SamplePad 2 30000 - 1",order,0.9073
+1182,"заказ 9068
+Auto Buyer
+FakeBook Pro 50000 - 1",order,0.9044
+1184,"СРОЧНО заказ 3048
+Дмитрий
+Dyson V15 - 5",order,0.8869
+1187,"заказ 2274
+Магазин на Садовой
+Артур
+Зарядки USB-C 20W - 50",order,0.8796
+1191,"заказ 9063
+Тест Клиент
+SamplePad 2 30000 - 1",order,0.9002
+1192,"заказ 9072
+Тест Клиент
+TestPhone X1 10000 - 3",order,0.9032
+1193,"заказ 3347
+Катя
+Redmi Note 13 - 5
+наличные",order,0.853
+1194,"заказ №3330
+Юля
+Redmi Note 13 - 5",order,0.8818
+1197,"СРОЧНО заказ 3288
+Zaur
+Samsung S24 Ultra - 1
+Xiaomi 14 - 3
+iPhone 14 128 - 4",order,0.9202
+1199,"заказ 9069
+Тест Клиент
+SamplePad 2 30000 - 2",order,0.9027
+1200,"Алексей
+Samsung S24 - 1
+AirPods - 1",order,0.8772
