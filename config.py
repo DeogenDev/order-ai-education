@@ -31,7 +31,7 @@ NUM_LABELS = 2
 MAX_LENGTH = 128
 
 # --- ГИПЕРПАРАМЕТРЫ ОБУЧЕНИЯ ---
-EPOCHS = 5
+EPOCHS = 3
 BATCH_SIZE = 32
 LEARNING_RATE = 2e-5
 WEIGHT_DECAY = 0.01

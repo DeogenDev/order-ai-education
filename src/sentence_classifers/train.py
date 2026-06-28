@@ -8,14 +8,15 @@ from transformers import (
     AutoModelForSequenceClassification,
     TrainingArguments,
     DataCollatorWithPadding,
-    Trainer
+    Trainer,
+    set_seed
 )
 
 from datasets import load_dataset
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, precision_recall_fscore_support
+from sklearn.metrics import accuracy_score, precision_recall_fscore_support, classification_report, confusion_matrix
 
 from .base import SentenceClassifierlBase
 
@@ -52,6 +53,9 @@ class SentenceClassifierTrainer(SentenceClassifierlBase):
         )
 
     def run(self, evaluate: bool = False):
+
+        set_seed(self.config.SEED)
+
         tokenized_datasets = self._get_tokenized_datasets(evaluate=evaluate)
 
         train_data = tokenized_datasets["train"]
@@ -107,14 +111,33 @@ class SentenceClassifierTrainer(SentenceClassifierlBase):
             clf.fit(X_train, train_labels)
             
             baseline_preds = clf.predict(X_val)
+            class_names = [str(k) for k in sorted(self.label2id.keys(), key=lambda x: self.label2id[x])]
+
+            report_text = classification_report(
+                val_labels, 
+                baseline_preds, 
+                target_names=class_names, 
+                zero_division=0
+            )
+
+            cm = confusion_matrix(val_labels, baseline_preds)
 
             precision, recall, f1, _ = precision_recall_fscore_support(
-                val_labels, baseline_preds, average="binary", zero_division=0
+                val_labels,
+                baseline_preds,
+                average="binary",
+                zero_division=0,
+                pos_label=self.config.LABEL_MAPPING["order"]
             )
             acc = accuracy_score(val_labels, baseline_preds)
 
             self.generated_baseline_metrics = {
-                "f1": f1, "accuracy": acc, "precision": precision, "recall": recall
+                "f1": f1,
+                "accuracy": acc,
+                "precision": precision,
+                "recall": recall,
+                "classification_report": report_text,
+                "confusion_matrix": cm,
             }
         except Exception as e:
             print(f"⚠️ Не удалось сгенерировать автоматический бейслайн: {e}")
@@ -135,6 +158,31 @@ class SentenceClassifierTrainer(SentenceClassifierlBase):
         ml_prec = eval_results.get("eval_precision", 0.0)
         ml_rec = eval_results.get("eval_recall", 0.0)
 
+        baseline = self.generated_baseline_metrics or {}
+        base_report = baseline.get("classification_report", "Нет данных")
+        base_cm = baseline.get("confusion_matrix", "Нет данных")
+
+        def format_confusion_matrix(cm):
+            if cm is None or not hasattr(cm, "shape") or cm.shape != (2, 2):
+                return "*Нет корректных данных матрицы ошибок*"
+
+            tp = cm[0][0]
+            fn = cm[0][1]
+            fp = cm[1][0]
+            tn = cm[1][1]
+
+            table_str = (
+                f"| Реальный \\ Предсказанный | **order (0)** | **not_order (1)** |\n"
+                f"| :--- | :---: | :---: |\n"
+                f"| **order (0)** | {tp} *(TP)* | {fn} *(FN)* |\n"
+                f"| **not_order (1)** | {fp} *(FP)* | {tn} *(TN)* |"
+            )
+
+            return table_str
+
+
+        cm_markdown_table = format_confusion_matrix(base_cm)
+
         if getattr(self, "generated_baseline_metrics", None):
             base_f1 = self.generated_baseline_metrics["f1"]
             base_acc = self.generated_baseline_metrics["accuracy"]
@@ -152,7 +200,14 @@ class SentenceClassifierTrainer(SentenceClassifierlBase):
                 f"| **F1-Score (Target Class)** | {base_f1:.4f} | {ml_f1:.4f} | {get_delta_str(ml_f1, base_f1)} |\n"
                 f"| **Accuracy** | {base_acc:.4f} | {ml_acc:.4f} | {get_delta_str(ml_acc, base_acc)} |\n"
                 f"| **Precision** | {base_prec:.4f} | {ml_prec:.4f} | {get_delta_str(ml_prec, base_prec)} |\n"
-                f"| **Recall** | {base_rec:.4f} | {ml_rec:.4f} | {get_delta_str(ml_rec, base_rec)} |"
+                f"| **Recall** | {base_rec:.4f} | {ml_rec:.4f} | {get_delta_str(ml_rec, base_rec)} |\n\n"
+                f"### 🔍 Детальный анализ Baseline (по обоим классам)\n\n"
+                f"#### Матрица ошибок (Confusion Matrix):\n"
+                f"{cm_markdown_table}\n\n"
+                f"#### Поклассовый отчет (Classification Report):\n"
+                f"```text\n"
+                f"{base_report}\n"
+                f"```"
             )
         else:
             metrics_block = (
@@ -189,7 +244,11 @@ class SentenceClassifierTrainer(SentenceClassifierlBase):
         preds = np.argmax(predictions, axis=1)
         
         precision, recall, f1, _ = precision_recall_fscore_support(
-            labels, preds, average="binary", zero_division=0
+            labels,
+            preds,
+            average="binary",
+            zero_division=0,
+            pos_label=self.config.LABEL_MAPPING["order"]
         )
         acc = accuracy_score(labels, preds)
         

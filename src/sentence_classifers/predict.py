@@ -22,7 +22,7 @@ class SentenceClassifier(SentenceClassifierlBase):
 
         self.model = AutoModelForSequenceClassification.from_pretrained(self.final_model_dir)
         self.tokenizer = AutoTokenizer.from_pretrained(self.final_model_dir)
-        
+
         # Автоматически выбираем GPU, если он доступен
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.model.to(self.device)
@@ -55,7 +55,7 @@ class SentenceClassifier(SentenceClassifierlBase):
 
         with torch.no_grad():
             outputs = self.model(**inputs)
-        
+
         logits = outputs.logits
         predicted_class_id = torch.argmax(logits, dim=-1).item()
         label_name = self.model.config.id2label.get(predicted_class_id, str(predicted_class_id))
@@ -73,7 +73,7 @@ class SentenceClassifier(SentenceClassifierlBase):
             print("❌ Ошибка: Входной CSV должен обязательно содержать колонки 'id' и 'text'!")
             return
 
-        
+
         texts = df["text"].astype(str).tolist()
         ids = df["id"].tolist()
 
